@@ -90,7 +90,7 @@ U 1 1 5D3D1271
 P 14500 7700
 F 0 "J4" V 14717 7646 50  0000 C CNN
 F 1 "Conn_01x32" V 14626 7646 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x32_P2.54mm_Vertical" H 14500 7700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical" H 14500 7700 50  0001 C CNN
 F 3 "~" H 14500 7700 50  0001 C CNN
 	1    14500 7700
 	1    0    0    -1  
@@ -590,23 +590,23 @@ F 3 "~" H 12150 8100 50  0001 C CNN
 	1    12150 8100
 	1    0    0    -1  
 $EndComp
-Text GLabel 11950 8300 0    50   Input ~ 0
+Text GLabel 11950 8500 0    50   Input ~ 0
 UART4_TX
-Text GLabel 11950 8200 0    50   Input ~ 0
+Text GLabel 11950 8400 0    50   Input ~ 0
 UART4_RX
-Text GLabel 11950 8100 0    50   Input ~ 0
+Text GLabel 11950 8200 0    50   Input ~ 0
 SPI_SCK
-Text GLabel 11950 8000 0    50   Input ~ 0
+Text GLabel 11950 8100 0    50   Input ~ 0
 SPI_MISO
-Text GLabel 11950 7900 0    50   Input ~ 0
+Text GLabel 11950 8000 0    50   Input ~ 0
 SPI_MOSI
 Text GLabel 11950 9000 0    50   Input ~ 0
 SWDIO
 Text GLabel 11950 8900 0    50   Input ~ 0
 SWCLK
-Text GLabel 11950 7800 0    50   Input ~ 0
+Text GLabel 11950 7900 0    50   Input ~ 0
 I2C_SCL
-Text GLabel 11950 7700 0    50   Input ~ 0
+Text GLabel 11950 7800 0    50   Input ~ 0
 I2C_SDA
 $Comp
 L power:GND #PWR022
@@ -967,8 +967,6 @@ F 3 "~" H 12400 6400 50  0001 C CNN
 	1    12400 6400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14000 5900 14000 6200
 Wire Wire Line
 	10250 2900 10550 2900
 Wire Wire Line
@@ -1884,7 +1882,7 @@ Text Label 2450 1500 0    50   ~ 0
 NRST
 Text Label 2950 1700 2    50   ~ 0
 BOOT0
-Text Label 11950 8500 2    50   ~ 0
+Text Label 11950 7700 2    50   ~ 0
 NRST
 Wire Wire Line
 	2700 3700 3000 3700
@@ -2015,10 +2013,10 @@ Wire Wire Line
 Text Label 2800 3000 0    50   ~ 0
 T-C
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5E1352A1
 P 12700 4850
-F 0 "#PWR?" H 12700 4600 50  0001 C CNN
+F 0 "#PWR0103" H 12700 4600 50  0001 C CNN
 F 1 "GND" H 12705 4677 50  0000 C CNN
 F 2 "" H 12700 4850 50  0001 C CNN
 F 3 "" H 12700 4850 50  0001 C CNN
@@ -2035,10 +2033,10 @@ Connection ~ 12700 4750
 Wire Wire Line
 	12700 4750 12700 4850
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 5E16BE57
 P 11800 4900
-F 0 "#PWR?" H 11800 4650 50  0001 C CNN
+F 0 "#PWR0104" H 11800 4650 50  0001 C CNN
 F 1 "GND" H 11805 4727 50  0000 C CNN
 F 2 "" H 11800 4900 50  0001 C CNN
 F 3 "" H 11800 4900 50  0001 C CNN
@@ -2054,4 +2052,6 @@ Wire Wire Line
 Connection ~ 11800 4750
 Wire Wire Line
 	11800 4750 11800 4900
+NoConn ~ 10250 3100
+NoConn ~ 11950 8300
 $EndSCHEMATC
